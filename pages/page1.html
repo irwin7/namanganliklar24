@@ -5,15 +5,23 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Namanganliklar24</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
   <header>
-    <div>
+
+    <div class="header-li">
       <img src="../img/logo.svg" alt="Namanganliklar24-logo" width="300" height="21">
       <ul>
-        <li><span>&#36;</span> 10137.2</li>
-        <li><span>P</span> 138.26></li>
-        <li><span>&euro;</span> 10988.7 2</li>
+        <li class="currency-v"><span class="currency">&#36;</span> 10137.2</li>
+        <li class="currency-v"><span class="currency">P</span> 138.26</li>
+        <li class="currency-v"><span class="currency">&euro;</span> 10988.7 2</li>
       </ul>
       <ul>
         <li>
@@ -21,20 +29,23 @@
         </li>
         <li>
           <img src="../img/rus-logo.svg" alt="russian-flag" width="20" height="20">
-          <span>рус</span>
+          <span class="lang">рус</span>
         </li>
-        <li>
-          <span class="follow-tg">Подписатся</span>
+        <li class="follow-tgg">
+          <img src="../img/telegram-button.svg" alt="Telegram-logo" width="20" height="20">
+          <a href="#" class="follow-tg">Подписатся</a>
         </li>
       </ul>
     </div>
+ 
+ 
     <!-- navbar -->
-    <nav>
-      <ul>
+    <nav class="navbar">
+      <ul class="nav-list">
         <li><a href="#">Узбекистана </a></li>
         <li><a href="#">Мир </a></li>
         <li><a href="#">Экономика </a></li>
-        <li><a href="page1.html">Политика </a></li>
+        <li><a href="page1.html" >Политика </a></li>
         <li><a href="#">Общество </a></li>
         <li><a href="#">Технологии </a></li>
         <li><a href="#">Спорт </a></li>
@@ -43,33 +54,34 @@
         <li><a href="#">Туризм</a></li>
       </ul>
     </nav>
+   
     <!-- ad -->
     <aside class="ad">
      <a href="#"><img src="../img/nrg-banner.jpg" alt="nrg-ad" width="1200" height="99"></a>
    </aside>
    <!-- virus info -->
-   <section>
+   <section class="info-c">
      <ul>
-       <li>
+       <li class="corona">
          <img src="../img/icon-covid.svg" alt="covid-icon" width="43" height="45"><h2>Коронавирус COVID-19 <br> в Узбекистане</h2>
        </li>
  
        <li>
          <img src="../img/icon-infected.svg" alt="infected-icon" width="38" height="40">
          <h3 class="infected">Инфицированы</h3>
-         <span class="infected">2753</span>
+         <span class="numb-inf">2753</span>
        </li>
  
        <li>
          <img src="../img/icon-recovered.svg" alt="recovered-icon" width="38" height="40">
          <h3 class="recovered">Выздоровели</h3>
-         <span class="recovered">2245</span>
+         <span class="numb-inf">2245</span>
        </li>
  
        <li>
          <img src="../img/icon-dead.svg" alt="dead-icon" width="38" height="40">
          <h3 class="dead">Умерли</h3>
-         <span class="dead">0</span>
+         <span class="numb-inf">0</span>
        </li>
  
      </ul>
