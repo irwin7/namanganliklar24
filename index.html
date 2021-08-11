@@ -5,11 +5,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Namanganliklar 24</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="body">
+<body>
   <header>
-   <div>
+
+   <div class="header-li">
      <img src="./img/logo.svg" alt="Namanganliklar24-logo" width="300" height="21">
      <ul>
        <li class="currency-v"><span class="currency">&#36;</span> 10137.2</li>
@@ -30,21 +34,24 @@
        </li>
      </ul>
    </div>
+
+
    <!-- navbar -->
-   <nav>
-     <ul>
-       <li><a href="#" class="navbar">Узбекистана </a></li>
-       <li><a href="#" class="navbar">Мир </a></li>
-       <li><a href="#" class="navbar">Экономика </a></li>
-       <li><a href="pages/page1.html" class="navbar">Политика </a></li>
-       <li><a href="#" class="navbar">Общество </a></li>
-       <li><a href="#" class="navbar">Технологии </a></li>
-       <li><a href="#" class="navbar">Спорт </a></li>
-       <li><a href="#" class="navbar">Культура </a></li>
-       <li><a href="#" class="navbar">Происшествия </a></li>
-       <li><a href="#" class="navbar">Туризм</a></li>
+   <nav class="navbar">
+     <ul class="nav-list">
+       <li><a href="#">Узбекистана </a></li>
+       <li><a href="#">Мир </a></li>
+       <li><a href="#">Экономика </a></li>
+       <li><a href="pages/page1.html" >Политика </a></li>
+       <li><a href="#">Общество </a></li>
+       <li><a href="#">Технологии </a></li>
+       <li><a href="#">Спорт </a></li>
+       <li><a href="#">Культура </a></li>
+       <li><a href="#">Происшествия </a></li>
+       <li><a href="#">Туризм</a></li>
      </ul>
    </nav>
+  
    <!-- ad -->
    <aside class="ad">
     <a href="#"><img src="img/nrg-banner.jpg" alt="nrg-ad" width="1200" height="99"></a>
@@ -52,26 +59,26 @@
   <!-- virus info -->
   <section class="info-c">
     <ul>
-      <li>
+      <li class="corona">
         <img src="img/icon-covid.svg" alt="covid-icon" width="43" height="45"><h2>Коронавирус COVID-19 <br> в Узбекистане</h2>
       </li>
 
       <li>
         <img src="img/icon-infected.svg" alt="infected-icon" width="38" height="40">
         <h3 class="infected">Инфицированы</h3>
-        <span class="infected">2753</span>
+        <span class="numb-inf">2753</span>
       </li>
 
       <li>
         <img src="img/icon-recovered.svg" alt="recovered-icon" width="38" height="40">
         <h3 class="recovered">Выздоровели</h3>
-        <span class="recovered">2245</span>
+        <span class="numb-inf">2245</span>
       </li>
 
       <li>
         <img src="img/icon-dead.svg" alt="dead-icon" width="38" height="40">
         <h3 class="dead">Умерли</h3>
-        <span class="dead">0</span>
+        <span class="numb-inf">0</span>
       </li>
 
     </ul>
@@ -136,11 +143,11 @@
       <button class="on-button">Включит уведомления!</button>
     </section>
 
-    <section>
+    <section class="last-news">
       <h2>Последние новости</h2>
       <div>
         <div>
-          <ul>
+          <ul class="last-news-list">
             <li>
               <a href="#">
                 <div>
@@ -227,10 +234,10 @@
             </li>
           </ul>
         </div>
-        <button>Больше новостей</button>
+        <a href="" class="more">Больше новостей</a> 
       </div>
-      <div>
-        <div>
+      
+        <div class="left-news">
           <h2>Cамые популярные новости</h2>
           <ul>
             <li>
@@ -265,23 +272,25 @@
               </a>
             </li>
           </ul>
-        </div>
-        <aside>
-          <a href="#">
-            <img src="img/reklama-ucell.jpg" alt="reklama" width="386" height="477">
-          </a>
-        </aside>
+        
+      
+      <aside>
+      <a href="#">
+        <img src="img/reklama-ucell.jpg" alt="reklama" width="386" height="477">
+      </a>
+    </aside>
       </div>
+
     </section>
 
-    <aside>
+    <aside class="app-dl">
       <div>
         <img src="img/phone.png" alt="phone" width="236" height="177">
       </div>
-      <div>
-        <h2>Всегда будьте в курсе последних новостей!</h2>
-        <p><b>Установите мобильное приложение NAMANGANLIKLAR24 <br>
-          и все новости в вашем кармане!</b></p>
+      <div class="app-dl-txt">
+        <h2 class="ads">Всегда будьте в курсе последних новостей!</h2>
+        <p class="ads-des">Установите мобильное приложение NAMANGANLIKLAR24 <br>
+          и все новости в вашем кармане!</p>
       </div>
       <div>
         <ul>
@@ -302,28 +311,35 @@
   </main>
 
   <footer>
-    <section>
-      <div>
-        <a href="index.html"><img src="img/logo.svg" alt="Namanganliklar24-logo" width="300" height="21"></a>
-        <span>Подписывайтесь на наш канал в Telegram и будьте всегда в курсе самых последних новостей:</span>
-        <p>Подписатся</p>
-      </div>
+    <section class="footer">
       <div>
         <ul>
-          <li><a href="#">О сайте <br> Воспроизводство, копирование, тиражирование, распростране ние и иное использование информации с сайта «NAMANGANLIKLAR24.UZ» возможно только с предварительного письменного разрешения редакции.</a></li>
+          <li><a href="index.html" class="logo-wh"><img src="img/logo-wh.svg" alt="Namanganliklar24-logo" ></a></li>
+          <li><span class="foot-span">Подписывайтесь на наш канал в Telegram и будьте всегда в курсе самых последних новостей:</span></li>
+          <li> <div class="follow-tggg">
+          <img src="img/icon-telegram-blue.svg" alt="Telegram-logo" width="20" height="20" >
+        <a href="#">Подписатся</a>
+        </div></li>
         </ul>
+        
+        
+       
       </div>
-
-      <div>
+    </section>
+      <section>
+      <div class="footer-div">
         <ul>
+          <li><a href="#">О сайте</a></li>
+          <li><a href="#">Воспроизводство, копирование, тиражирование, распростране ние и иное использование информации с сайта «NAMANGANLIKLAR24.UZ» возможно только с предварительного письменного разрешения редакции.</a></li>
+        
+
+      
           <li><a href="#">Информация о сайте </a></li>
           <li><a href="#">Напишите нам </a></li>
           <li><a href="#">Реклама </a></li>
           <li><a href="#">Прислать новость </a></li>
-        </ul>
-      </div>
-      <div>
-        <ul>
+        
+      
           <li><a href="#">Использование материалов </a></li>
           <li><a href="#">Темы дня </a></li>
           <li><a href="#">Наша команда </a></li>
